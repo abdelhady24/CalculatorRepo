@@ -10,7 +10,6 @@ namespace ConsoleCalculator
         {
             Console.Write("Type the operation you want to execute (sum, subtract, multiply, divide): ... ");
             var result = Console.ReadLine();
-            vv
             Console.Write("Please type the first operand: ");
             var n1 = Console.ReadLine();
 
