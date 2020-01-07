@@ -32,10 +32,16 @@ namespace CalculatorLogic
 
         public double Divide(double a, double b)
         {
-            var x = a / b;
-            Console.ForegroundColor = color;
-            Console.WriteLine($"The result is: {x}");
-            return x;
+                var x = a / b;
+                Console.ForegroundColor = color;
+                Console.WriteLine($"The result is: {x}");
+                if (double.IsInfinity(x))
+                {
+                    return -999;
+                }
+                return x;
+           
+            
         }
     }
 }
